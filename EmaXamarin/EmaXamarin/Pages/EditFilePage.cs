@@ -22,6 +22,7 @@ namespace EmaXamarin.Pages
             {
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 Text = _originalText,
+                BackgroundColor = Color.FromHex("#FFFFFF"),
             };
             _editBox.TextChanged += (sender, args) => PersistedState.AutoSaveEditText = args.NewTextValue;
 
